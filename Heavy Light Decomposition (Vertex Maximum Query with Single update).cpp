@@ -26,7 +26,7 @@ int n; // to be taken input as no of vertex
 struct node
 {
         int val;
-        int lazy;
+        int lazy;  // used the same tamplate as Range update [so thats why we kept the lazy] [although it is easily do able without lazy]
 } Tree[4*N] ;
 int ara[N];
 int tin[N]; // most important array , in this array vertex on same heavy chain will have consecutive visiting time , [for vertex no it will give visiting no ] [ segment tree is built on visiting no]
