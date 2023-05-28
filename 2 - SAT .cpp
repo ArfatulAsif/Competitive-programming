@@ -210,23 +210,4 @@ int32_t main()
 
 }
 
-/*
-
-5 7
-1 -2 -1 3 -3 -4 -3
-2 3 -2 4 5 -5 4
-
-output : The given expression is satisfiable
-
-The solution:
-1 0 0 1 0
-
-
-2 4
-1 -1 1 -1
-2 2 -2 -2
-
-output : The given expression is NOT satisfiable
-
-*/
 
