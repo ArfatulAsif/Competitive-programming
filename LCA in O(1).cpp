@@ -1,6 +1,5 @@
 
 
-
 // ============= Euler Tour type -  03 ========== LCA in O(1) ============
 
 // ET3 = 1 2 3 2 4 6 4 7 4 2 5 2 1 8 9 8 10 8 1
@@ -11,20 +10,6 @@
 //                we find this using sparse table O(1) , segment tree O(logn)
 
 
-
-
-
-//Intermediary
-//Young kid on the block
-//AIAsif try's "Continuing the journey"
-#include<bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-using namespace std;
-using namespace __gnu_pbds;
-#define endl "\n"
-#define int long long int
-#define ordered_set tree< int, null_type, less<int>, rb_tree_tag,tree_order_statistics_node_update>
 const int N = 1e5;
 vector<int>graph[N];
 vector<int>ET3;
