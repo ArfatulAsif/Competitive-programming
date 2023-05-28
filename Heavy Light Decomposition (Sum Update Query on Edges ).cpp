@@ -1,35 +1,14 @@
-================================================= HLD Sum Update Query on Edges ===============================
-================================================================================================================
+//Arfatul Islam Asif
 
 //Edges are basically like Vextex ;
 // Lets say there is an edges directed away from root as [1-2] , we will store its value on ara[2] ; which means edge er value down vertex e thakbe [look down from root]
 
-
-
-
-
-
-
 //This supports Range update , which euler tour doesnt
-
 
 //The technique is All heavy path er node gula visit hobe consecutive time eeee
 //So segment tree based on visit time will provide query ans for two vertex who are on same Heavy Path
 
 
-
-
-//Intermediary
-//Young kid on the block
-//AIAsif try's "Continuing the journey"
-#include<bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-using namespace std;
-using namespace __gnu_pbds;
-#define endl "\n"
-#define int long long int
-#define ordered_set tree< int, null_type, less<int>, rb_tree_tag,tree_order_statistics_node_update>
 const int N = 2e5+100;
 vector<pair<int,int>>graph[N];
 int level[N];
