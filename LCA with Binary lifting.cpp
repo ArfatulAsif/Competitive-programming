@@ -6,7 +6,6 @@ bool vis[N];
 int din[N];
 int dout[N];
 int tin = 0;
-int tout = 0;
 const int L = log2(N);
 int up[N][L+1];
 
