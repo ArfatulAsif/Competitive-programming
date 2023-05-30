@@ -1,23 +1,10 @@
 
-=================================== MST Krushkal ============
-https://ideone.com/u0hFav
-=============================================================
-//Asif try's "A new beginning";
-//beginner
-//learner
-#include<bits/stdc++.h>
-using namespace std;
-
-#define endl "\n"
-#define int long long int
 const int N = 1e5;
 int parent[N];
 int sz[N];
 vector<pair<int, pair<int,int>>>edge;
 vector<pair<pair<int,int> , int>>MST;
 int mstCost = 0;
-
-
 
 
 void make(int v)
