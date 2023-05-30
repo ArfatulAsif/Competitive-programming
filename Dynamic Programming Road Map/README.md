@@ -10,7 +10,7 @@ Here , I have described a road map which I took in learning Dynamic Programming 
 
 <h3> Step - 01 : Watch Abdul Bari Sir's Video on Recursion  </h3>
 It is very important to have an clear idea on how different types of recurion works . And also one should have clear idea on stack memory
-and how it is accessed and cleared through recursive process .
+and how it is accessed and cleared through recursive process . You should watch BARI sir's video on recursion available on Youtube For this .
 <h1></h1>
 <h1></h1>
 <h3> Step - 02 : Do 50 Easy and medium problems on Recursion and Backtracking from GeeksForGeeks </h3>
@@ -23,7 +23,8 @@ Select sort by  difficulty and solve atleast 50 problems.
 After solving them You must have an Excellent Idea on how Recursion and Stack memory works as well as Backtracking.
 ```
 <h1></h1>
-
+<h1></h1>
+<h1></h1>
 <h3> Step - 03 : Do some Text Book Works </h3>
 It is time to get yourself familiarize with DP . You know , basic definations , why dp? How dp? etc . 
 You should read some blogs and articles on DP  and try to get an image on dp . 
@@ -64,6 +65,8 @@ Now you should turn to CSES dp section . And try to solve as many as you can . I
 After this step you should have abstruct idea on how dp works . It is time to catagorize your approach 
 on solving traditional dp problems . Move on to next step .
 ```
+<h1></h1>
+<h1></h1>
 
 <h3> Step - 05 : Catagorizing your approach on solving traditional dp problems </h3>
  Follow the link . You will reach a leetcode article . Follow every details of it blindly , trust me ...
