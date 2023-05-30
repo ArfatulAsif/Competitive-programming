@@ -1,37 +1,15 @@
-=========================== LONGEST PATH PROBLEM ===============
+=========================== LONGEST PATH IN DAG ===============
 ================================================================
 IT is a NP HARD For normall undirected graph
-
 ================================================================
-
 
 // LONGEST PATH in a undirected graph or NON DAG graph is a NP-Hard problem
 // however Longest Path in a DAG is O(V+E) problem using topo sort
-
-
-
 //using normall dijkstra in a LONgest path in a graph problem wont work , cause it is a NP HARD PROBLEM
-
 
 // Modified dijkstra is a OK on DAG
 
 // best is using topo Sort + O(V+E) approach
-
-
-
-
-
-//Intermediary
-//Young kid on the block
-//AIAsif try's "Continuing the journey"
-#include<bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-using namespace std;
-using namespace __gnu_pbds;
-#define endl "\n"
-#define int long long int
-#define ordered_set tree< int, null_type, less<int>, rb_tree_tag,tree_order_statistics_node_update>
 
 
 // LONGEST PATH IN A DAG
