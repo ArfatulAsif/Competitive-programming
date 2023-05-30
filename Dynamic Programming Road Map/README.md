@@ -65,7 +65,7 @@ After this step you should have abstruct idea on how dp works . It is time to ca
 on solving traditional dp problems . Move on to next step .
 ```
 
-<h3> Step - 05 : Catagorizing your approach on solving traditional dp problems <h3>
+<h3> Step - 05 : Catagorizing your approach on solving traditional dp problems </h3>
  Follow the link . You will reach a leetcode article . Follow every details of it blindly , trust me ...
  
   ```c
@@ -73,6 +73,27 @@ on solving traditional dp problems . Move on to next step .
   ```
   
   <img src = "leetcode dp.PNG">
+
+```c
+Follow it blindly , every last details of it . Trust Me 
+```
+
+<h3>Step -06 : Time to do Your own research and defining your own approch on various dp problems </h3>
+You should start solving dp problems from codeforces . Remember one thing , most of the problems under 1700 rated can be solved 
+using greedy even though they might have dp as tag .</br> So don't try dp on them .(or try , I think its quite your own decision )
+The reason I said so is because , you have recently learned dp and you will try dp apprach even on basic greedy problems and make it 
+much difficult. However this should pass away over time and maturity.
+<h1></h1>
+<h1></h1>
+<h3> Step -07 : Learn Bitmask dp </h3>
+
+Although it is a quite advanced technique . But I think You should learn it right away . Allmost all the problems which has
+n<20 as constrain is bitmask dp . 
+
+
+
+
+
 
 
 
