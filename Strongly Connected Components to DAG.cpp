@@ -1,9 +1,6 @@
+//Arfatul Islam Asif 
+//This programme can be used for both finding SCC's and converting a directed graph to DAG 
 
-#include<bits/stdc++.h>
-using namespace std;
-
-#define endl "\n"
-#define int long long int
 const int N = 1000;
 vector<int>graph[N];
 vector<int>Rgraph[N];
