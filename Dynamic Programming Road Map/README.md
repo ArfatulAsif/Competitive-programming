@@ -57,7 +57,22 @@ has explained solution of all the problems.
 ```c
 https://www.youtube.com/watch?v=FAQxdm0bTaw
 ```
-Now you should turn to CSES dp section . And try to solve as many as you can
-<img src = "CSES DP">
+Now you should turn to CSES dp section . And try to solve as many as you can . If you get stuck , don't waste much time , watch the solution and move on.
+<img src = "CSES DP.PNG">
+
+```c
+After this step you should have abstruct idea on how dp works . It is time to catagorize your approach 
+on solving traditional dp problems . Move on to next step .
+```
+
+<h3> Step - 05 : Catagorizing your approach on solving traditional dp problems <h3>
+ Follow the link . You will reach a leetcode article . Follow every details of it blindly , trust me ...
+ 
+  ```c
+  https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns#Merging-Intervals
+  ```
+  
+  <img src = "leetcode dp.PNG">
+
 
 
