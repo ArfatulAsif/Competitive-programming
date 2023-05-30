@@ -1,13 +1,4 @@
 
-
-//Asif try's "A new beginning";
-//beginner
-//learner
-#include<bits/stdc++.h>
-using namespace std;
-#define endl "\n"
-#define int long long int
-
 const int N = 1e5;
 int inf = 1e18;
 vector<pair<int,int>>graph[N];
