@@ -1,5 +1,5 @@
 # Dynamic Programming Road Map
-while I was surfing all over the internet on how to learn Dynamic Programming , I was quite confused . Eventually I did learn how dynamic programming works .
+While I was surfing all over the internet on how to learn Dynamic Programming , I was quite confused . Eventually I did learn how dynamic programming works .
 ```c
 Yes I am gonna use the line "how dynamic programming works" 
 You can never stop learning different dp technique as it is the hardest topic of all CP techniques
@@ -26,7 +26,7 @@ After solving them You must have an Excellent Idea on how Recursion and Stack me
 
 <h3> Step - 03 : Do some Text Book Works </h3>
 It is time to get yourself familiarize with DP . You know , basic definations , why dp? How dp? etc . 
-You should read some blogs and articles on DP  and try to get a image on dp . 
+You should read some blogs and articles on DP  and try to get an image on dp . 
 Now You should code some of the most common and well known dp problems .
 
 ```c
@@ -96,8 +96,23 @@ https://www.hackerearth.com/practice/algorithms/dynamic-programming/bit-masking/
 ```
 <img src = "hackearth dp.PNG">
 
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
+<h2>Step - 08 : The Most Important Step .</h2>
+I am by no means expert on dp , Far from it actully .</br>
+But I do know How it works while my journey through this road map . I can only hope that my writting was helpful to you 
+..
+If it was even a little bit helpful . 
 
+```c
+Please consider loggin in to your github and giving me a Star on my Competitive-Programming Repository. 
+```
+
+Take care BYE .
 
 
 
