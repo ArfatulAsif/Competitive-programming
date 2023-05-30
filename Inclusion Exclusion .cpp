@@ -1,21 +1,7 @@
-//Intermediary
-//Young kid on the block
-//AIAsif try's "Continuing the journey"
-#include<bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-using namespace std;
-using namespace __gnu_pbds;
-#define endl "\n"
-#define int long long int
-#define ordered_set tree< int, null_type, less<int>, rb_tree_tag,tree_order_statistics_node_update>
-
 // excellent problem on  inclusion exclusion
-
 // Nailed By me ,,, only only meee
 
-
-
+Solution of the Problem is given below 
 https://codeforces.com/contest/1295/problem/D
 
 
@@ -115,7 +101,6 @@ int32_t main()
                 {
                         int num = __builtin_popcountll(i);
 
-
                         int mul = 1;
 
                         for(int j=0;j<20;j++)
@@ -125,17 +110,14 @@ int32_t main()
                                         mul *= v[j];
                                 }
                         }
-
                         if(num%2==0)
                         {
                                 mul *= test;
-
                                 ans += (a+m-1)/mul - (a-1)/mul;
                         }
                         else
                         {
                                 mul *= test;
-
                                 ans -= (a+m-1)/mul - (a-1)/mul;
                         }
                 }
