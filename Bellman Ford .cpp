@@ -1,17 +1,4 @@
 
-======================================= Bellman Ford========================
-https://ideone.com/mWb7yl
-============================================================================
-
-//Asif try's "A new beginning";
-//beginner
-//learner
-#include<bits/stdc++.h>
-using namespace std;
-
-#define endl "\n"
-#define int long long int
-
 int inf = 1e18;
 
 struct edge
