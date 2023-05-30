@@ -1,16 +1,4 @@
 
-================================ Bi-connected Components =====================
-https://ideone.com/ewt4tL
-==============================================================================
-
-//Asif try's "A new beginning";
-//beginner
-//learner
-#include<bits/stdc++.h>
-using namespace std;
-
-#define endl "\n"
-#define int long long int
 const int N = 10000;
 vector<int>graph[N];
 int low[N];
