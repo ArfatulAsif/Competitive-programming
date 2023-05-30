@@ -1,14 +1,5 @@
-//Apprentice
-//New kid on the block
-//AIAsif try's "A new beginning"
-#include<bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-using namespace std;
-using namespace __gnu_pbds;
-#define endl "\n"
-#define int long long int
-#define ordered_set tree< int, null_type, less<int>, rb_tree_tag,tree_order_statistics_node_update>
+
+
 const int N = 2e5+100;
 int BIT[N];
 int n;
@@ -25,7 +16,7 @@ void update(int x,int val)
 int query(int x)
 {
         int sum = 0;
-        for(;x>0;x-=(x&-x))
+        for(;  x>0 ;  x-=(x&-x))
         {
                 sum+= BIT[x];
         }
@@ -69,10 +60,6 @@ int32_t main()
         }
 
         return 0;
-
-
-
-
 
 
 }
