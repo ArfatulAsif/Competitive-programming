@@ -42,7 +42,22 @@ If you are from Bangladesh , I also recommand that you follow shafayat's blog in
 
 <img src = "Shafayat blog.PNG">
 <h1></h1>
+<h1></h1>
 
+<h3> Step - 04 : Solving From Atcoder Educational DP Contest .</h3>
 
+```c
+https://atcoder.jp/contests/dp
+```
+
+Almost all recent CP coders I know had started  their dp jouney from this library. 
+You should solve as many as you can . If you get stuck , watch a video of Errichto From the link where he
+has explained solution of all the problems.
+
+```c
+https://www.youtube.com/watch?v=FAQxdm0bTaw
+```
+Now you should turn to CSES dp section . And try to solve as many as you can
+<img src = "CSES DP">
 
 
