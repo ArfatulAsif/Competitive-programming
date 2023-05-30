@@ -89,7 +89,12 @@ much difficult. However this should pass away over time and maturity.
 
 Although it is a quite advanced technique . But I think You should learn it right away . Allmost all the problems which has
 n<20 as constrain is bitmask dp . 
+I thought the following article was very helpful.
 
+```c
+https://www.hackerearth.com/practice/algorithms/dynamic-programming/bit-masking/tutorial/
+```
+<img src = "hackearth dp.PNG">
 
 
 
