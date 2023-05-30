@@ -1,15 +1,4 @@
-========================== Articulartion Point =====================
-https://ideone.com/xMIjeT
-====================================================================
 
-//Asif try's "A new beginning";
-//beginner
-//learner
-#include<bits/stdc++.h>
-using namespace std;
-
-#define endl "\n"
-#define int long long int
 const int N = 1e5;
 vector<int>graph[N];
 bool vis[N];
