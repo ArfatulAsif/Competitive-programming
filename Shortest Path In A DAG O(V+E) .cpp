@@ -1,22 +1,6 @@
 
 ======================SHORTEST  PATH IN A DAG ========== O(V+E)
 
-https://ideone.com/zM8Jto
-
-========================================================
-
-//Intermediary
-//Young kid on the block
-//AIAsif try's "Continuing the journey"
-#include<bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-using namespace std;
-using namespace __gnu_pbds;
-#define endl "\n"
-#define int long long int
-#define ordered_set tree< int, null_type, less<int>, rb_tree_tag,tree_order_statistics_node_update>
-
 
 const int inf = 1e18;
 const int N = 1e5+100;
