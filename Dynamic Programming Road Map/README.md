@@ -33,7 +33,9 @@ void print()
     cout<<ch;
 } 
 ```
-Did you learned any thing about stack memory by answer these questions ? If not then watch BARI sir's videos again .
+Did you learned any thing about stack memory by answering these questions ? If not then watch BARI sir's videos again .</br>
+
+*You should spend atmost 2 days in this step* 
     
 
 
@@ -48,6 +50,11 @@ Select sort by  difficulty and solve atleast 50 problems.
 ```c
 After solving them You must have an Excellent Idea on how Recursion and Stack memory works as well as Backtracking.
 ```
+
+</br>
+
+*You should spend atmost 1 week in this step*
+
 <h1></h1>
 <h1></h1>
 <h1></h1>
@@ -68,6 +75,9 @@ Remember You are not learning dp through them , Just getting yourself ready .
 If you are from Bangladesh , I also recommand that you follow shafayat's blog in this step.
 
 <img src = "Shafayat blog.PNG">
+
+*I don't really know the time laps in this step , take as long as you need.*
+
 <h1></h1>
 <h1></h1>
 
@@ -91,6 +101,10 @@ Now you should turn to CSES dp section . And try to solve as many as you can . I
 After this step you should have abstruct idea on how dp works . It is time to catagorize your approach 
 on solving traditional dp problems . Move on to next step .
 ```
+</br>
+
+*You should spend 2 weeks in this step.*
+
 <h1></h1>
 <h1></h1>
 
@@ -107,11 +121,27 @@ on solving traditional dp problems . Move on to next step .
 Follow it blindly , every last details of it . Trust Me 
 ```
 
+</br>
+
+
+*You should spend around 2 weeks in this step*
+
+
+<h1></h1>
+<h1></h1>
+
 <h3>Step -06 : Time to do Your own research and defining your own approch on various dp problems </h3>
 You should start solving dp problems from codeforces . Remember one thing , most of the problems under 1700 rated can be solved 
 using greedy even though they might have dp as tag .</br> So don't try dp on them .(or try , I think its quite your own decision )
 The reason I said so is because , you have recently learned dp and you will try dp apprach even on basic greedy problems and make it 
 much difficult. However this should pass away over time and maturity.
+</br>
+</br>
+
+
+*I don't know the time laps in this step , take as long as you need*
+
+
 <h1></h1>
 <h1></h1>
 <h3> Step -07 : Learn Bitmask dp </h3>
