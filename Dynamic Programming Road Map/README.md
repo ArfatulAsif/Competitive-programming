@@ -10,7 +10,33 @@ Here , I have described a road map which I took in learning Dynamic Programming 
 
 <h3> Step - 01 : Watch Abdul Bari Sir's Video on Recursion  </h3>
 It is very important to have a clear idea on how different types of recurion works . And also one should have clear idea on stack memory
-and how it is accessed and cleared through recursive process . You should watch BARI sir's video on recursion available on Youtube For this .
+and how it is accessed and cleared through recursive process . You should watch BARI sir's video on recursion available on Youtube For this .</br>
+
+Here is a Question for You. what happens and most importantly why happens in the following 2 codes? .
+
+```c
+void print()
+{
+    char ch;
+    cin>>ch;
+    cout<<ch;
+    print();
+}  
+```
+
+```c
+void print()
+{
+    char ch;
+    cin>>ch;
+    print();
+    cout<<ch;
+} 
+```
+Did you learned any thing about stack memory by answer these questions ? If not then watch BARI sir's videos again .
+    
+
+
 <h1></h1>
 <h1></h1>
 <h3> Step - 02 : Do 50 Easy and medium problems on Recursion and Backtracking from GeeksForGeeks </h3>
