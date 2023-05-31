@@ -41,7 +41,7 @@ Did you learned any thing about stack memory by answering these questions ? If n
 
 <h1></h1>
 <h1></h1>
-<h3> Step - 02 : Do 50 Easy and medium problems on Recursion and Backtracking from GeeksForGeeks </h3>
+<h3> Step - 02 : Do 50 Easy and Medium problems on Recursion and Backtracking from GeeksForGeeks </h3>
 Go to GFG and then go to topic wise practice and select topic Recursion and Backtracking .
 
 <img src = "GFG Recursion and Backtracking.PNG">
