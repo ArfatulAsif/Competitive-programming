@@ -121,6 +121,8 @@ on solving traditional dp problems . Move on to next step .
 Follow it blindly , every last details of it . Trust Me 
 ```
 
+Remember to focus on Recursive process rather than iterative . Cause thats way you would be able to transform a problem into recursive relation and then apply memoization . After a while you will realize that recursive process is much easier than iterative(Or may be).
+
 </br>
 
 
