@@ -9,7 +9,7 @@ Here , I have described a road map which I took in learning Dynamic Programming 
 
 
 <h3> Step - 01 : Watch Abdul Bari Sir's Video on Recursion  </h3>
-It is very important to have a clear idea on how different types of recurion works . And also one should have clear idea on stack memory
+It is very important to have a clear idea on how different types of recursion works . And also one should have clear idea on stack memory
 and how it is accessed and cleared through recursive process . You should watch BARI sir's video on recursion available on Youtube For this .</br>
 
 Here is a Question for You. what happens and most importantly why happens in the following 2 codes? .
