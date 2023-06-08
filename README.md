@@ -1,4 +1,4 @@
-# Competitive-programming <img src="zzzzzzzz Batarang.png" width="100"></div>   <img src="zzzzzzz Me.png" width="100"></div> <a href="https://www.linkedin.com/in/arfatul-islam-asif-169116279/">LinkedIn</a> </br>
+# Competitive-programming <img src="zzzzzzzz Batarang.png" width="100"></div> </div> <a href="https://www.linkedin.com/in/arfatul-islam-asif-169116279/">LinkedIn</a> </br>
                                                                                                          
 In this repository I have stored some of the most used intermediate and advanced level algorithms in competitive programming .
 I have written all the codes by myself  . Before that I myself have learned these algorihms from various blog's . I have written them while maintaing strong modularity , so that when I need to remember a process or an algorithms I can do so just by looking at the codes . I have also commented in the codes where it was necessary . 
