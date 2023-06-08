@@ -1,22 +1,13 @@
 
-
 // Maximum Xor or Minimum Xor of two numbers in an array Using trie
 
 
-
-#include<bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-using namespace std;
-using namespace __gnu_pbds;
-#define endl "\n"
-#define int long long int
-#define ordered_set tree< int, null_type, less<int>, rb_tree_tag,tree_order_statistics_node_update>
 const int N = 5e6;
 int node[N][2]; //remember trie er edge information store kore (NOT node) . [ lets say 1 --> 2 e ekti edge directed , then er information store hobe  cnt[2] Te ::::::::::: ebong 2 =  node[1][] is like 1 = parent[2] er moto in directed tree :: age amra parent diye jump kortm : Now children diye jump]
 int root = 0;                 //which means Edge info is actually stored in the 2nd child : and edges er characterictistics is (2 = node[1][]) refers to (1) ---> (2) edge
 int avail = 0;
 int cnt[N];
+
 
 void ini()
 {
