@@ -1,4 +1,9 @@
-//all Numbers are distinct thats why ordered_set works . Else use MergeSort Tree
+//all Numbers are distinct thats why ordered_set and MO's algorithm works  . Else use MergeSort Tree
+
+
+//spoj mkth number soln : TLE (but should works on faster judge)
+
+
 
 const int N = 1e5+10;
 const int M = 5000+10;
