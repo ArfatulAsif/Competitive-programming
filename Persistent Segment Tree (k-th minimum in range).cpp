@@ -1,4 +1,4 @@
-
+//Works for non-distinct elements too [unlike mo's algo]
 
 const int M = 5000+100;
 const int N = 100000+100;
