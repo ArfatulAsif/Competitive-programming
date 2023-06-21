@@ -50,7 +50,7 @@ void update(node *prev, node *cur ,int lo,int hi,int pos,int val)
         }
         if(lo==hi)
         {
-                cur->val = prev->val;  //If elements are not distinct
+                cur->val = prev->val;  //If elements are not distinct , we need to add previous values too : else just cur->val = 1 would works
                 cur->val += val;  
 
                 return;
