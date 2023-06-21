@@ -123,7 +123,7 @@ int32_t main()
         for(int i=1;i<=n;i++)
         {
                 arr[i] = lower_bound(v.begin(),v.end(),arr[i])-v.begin() + 1; // converting all the elements to (0 < arr[i] <= n)
-                //Here arr[i] = arr[i]-th element in vector v;
+                //Here arr[i] = arr[i]-th element in vector v; //THis makes sure we getting the position rather than the number . This will make sure Histogram fenwick tree < N size
         }
 
         for(int i=1;i<=n;i++)
