@@ -36,7 +36,7 @@ vector<Query>Q;
 void results(vector<int> &v , int m)
 {
 
-        block = sqrt(v.size()+0.0);
+        block = sqrt(v.size()+0.0);  // USE block = 666; way faster
 
         sort(Q.begin() , Q.end() , cmp);
 
