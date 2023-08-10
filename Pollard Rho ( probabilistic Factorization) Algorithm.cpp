@@ -2,7 +2,8 @@
 //This is an algorithm For Finding a Divisor of a Number . It is a probabilistic algorithm . 
 //Using BirthDay paradox to explain the probability 
 
-//And its is a good algorthm for finding a divisior of a Large Number such as N >= 1e15 
+//And its is a good algorthm for finding a divisior of a Large Number such as N >= 1e15 [ which requres less than 1e6 moves  ]
+                                            [There is a 90% plus probability that using 1e6 Random number we shall get a divisor]
 
   
 int cnt = 0;
