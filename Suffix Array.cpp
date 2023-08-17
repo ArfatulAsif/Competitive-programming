@@ -1,9 +1,11 @@
 
-Suffix array .
-1.Longest Common prefix LCP.
-2.Longest Repeating substring LRS.
-3.Longest Common substring LCS.
-4.No of unique substring .
+Suffix array .....
+1.Finding pattern in a text nlogn.
+2.Longest Common prefix LCP.
+3.Longest Repeating substring LRS.
+4.Longest Common substring LCS.
+5.No of unique substring .
+6.Longest Palindromic substring LPS.
 
 
 
@@ -671,6 +673,187 @@ int32_t main()
 
 
 }
+
+
+================================== Longest Palindromic substring (LPS) ================
+
+s = s +"#"+rev(s) 
+finding max lcp of this string is the answer...
+
+	
+
+//Intermediary
+//Young kid on the block
+//AIAsif try's "Continuing the journey"
+#include<bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace std;
+using namespace __gnu_pbds;
+#define endl "\n"
+#define int long long int
+#define ordered_set tree< int, null_type, less<int>, rb_tree_tag,tree_order_statistics_node_update>
+//Suffix array : Sorted Array containing all the suffixe's
+// Here in this nlongn approach we are gonna just store the index's
+
+class Suffix
+{
+public:
+        int index;
+        pair<int,int> Rank;
+};
+
+bool cmp(const Suffix &a , const Suffix &b)
+{
+        return a.Rank<b.Rank;
+}
+
+vector<int> buildSuffixArray(string s)
+{
+        int n = s.size();
+
+        vector<Suffix>suffix;
+
+        for(int i=0;i<n;i++)
+        {
+                Suffix a;
+                a.index = i;
+                a.Rank.first = s[i]-'a';
+                a.Rank.second = (i+1<n)? (s[i+1]-'a') : -1;
+
+                suffix.push_back(a);
+        }
+        sort(suffix.begin() , suffix.end() , cmp);
+
+        int ind[n];
+
+        for(int k = 4 ; k< 2*n ; k*=2)
+        {
+                int Rank = 0;
+
+                int prev_Rank = suffix[0].Rank.first;;
+
+                suffix[0].Rank.first = Rank;
+
+                ind[suffix[0].index] = 0; // ind[Suffix ID dile ] = position output dibe ..
+
+                for(int i = 1;i<n;i++)
+                {
+                        if(suffix[i].Rank.first == prev_Rank && suffix[i-1].Rank.second == suffix[i].Rank.second)
+                        {
+                                prev_Rank = suffix[i].Rank.first;
+                                suffix[i].Rank.first = Rank;
+                        }
+                        else
+                        {
+                                prev_Rank = suffix[i].Rank.first;
+                                Rank++;
+                                suffix[i].Rank.first = Rank;
+                        }
+
+                        ind[suffix[i].index] = i;
+                }
+
+                for(int i=0;i<n;i++)
+                {
+                        int nextindex = suffix[i].index + k/2;
+                        suffix[i].Rank.second = (nextindex<n)? (suffix[ind[nextindex]].Rank.first) : -1;
+
+                }
+
+                sort(suffix.begin() , suffix.end() , cmp);
+        }
+
+        vector<int>SuffixArray;
+
+        for(int i=0;i<n;i++)
+        {
+                SuffixArray.push_back(suffix[i].index);
+        }
+
+        return SuffixArray;
+
+}
+
+
+vector<int>LCP_kasai(const string &txt)  //lcp[i] = longest common prefix of suffixArray[i] and suffixArray[i+1]
+{
+        int n = txt.size();
+
+        vector<int>suffixArray = buildSuffixArray(txt);
+
+        vector<int>invSuffixArray(n,0);
+
+        vector<int>lcp(n,0);
+
+        for(int i=0;i<n;i++)
+        {
+                invSuffixArray[suffixArray[i]] = i;
+        }
+
+        int k = 0;
+
+        for(int i=0;i<n;i++)
+        {
+                if(invSuffixArray[i]== n-1)
+                {
+                        k = 0;
+                        continue;
+                }
+                int j = suffixArray[invSuffixArray[i]+1]; //index of next suffix in the suffixArray
+
+                while(i+k<n && j+k<n && txt[i+k]==txt[j+k])  // Current and Next tar koyta character match kore dekram
+                {
+                        k++;
+                }
+                lcp[invSuffixArray[i]] = k;
+
+                if(k>0)
+                {
+                        k--;
+                }
+
+        }
+
+        return lcp;
+
+
+
+}
+
+int32_t main()
+{
+        ios::sync_with_stdio(0);
+        cin.tie(0);
+
+        int n;
+        cin>>n;
+        string s;
+        cin>>s;
+
+        string s1 = s;
+
+        reverse(s1.begin() , s1.end());
+
+        s = s+"#"+s1;
+
+        vector<int>lcp = LCP_kasai(s);
+
+        int mx = 0;
+
+        for(int i=0;i<s.size();i++)
+        {
+                mx = max(mx , lcp[i]);
+        }
+
+
+        cout<<mx<<endl;
+
+        return 0;
+
+
+}
+
 
 
 =============================================== Suffix Array O(nlogn) ======= counting sort =============
