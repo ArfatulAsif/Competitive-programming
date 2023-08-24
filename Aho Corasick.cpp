@@ -1,7 +1,8 @@
-
+// Motto : longest suffix that ends at i which is also a prefix
 =============================================================== Aho Corasic =============================================
 
-// Motto : longest suffix that ends at i which is also a prefix
+
+// 1.Finding The occarance of all pattern in a text in O(text.size()) time.
 
 
 const int ALPH = 52;
