@@ -1,5 +1,14 @@
 https://leetcode.com/discuss/study-guide/2347639/A-comprehensive-guide-and-template-for-monotonic-stack-based-problems
+
+
 https://leetcode.com/discuss/study-guide/2703748/Monotonic-stack-study-summary [For Topic Wise]
+1. Next greater / lesser problem , Previous greater / lesser problem:
+2. Construct binary tree from given array
+3. Subsequece problem[Very Important]
+5. Subarray problem [Very Very Important , counting sub array with maximum , minimum property]
+6. monotonic queue together with binary search
+7. Monotonic stack but manily compare current with top of stack then determine whether add or not current
+10. Sort subarry / remove subarry in order to make whole array ascending
 
 
 ===================== 1.Next Greater =================
