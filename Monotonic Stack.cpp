@@ -1,5 +1,5 @@
 https://leetcode.com/discuss/study-guide/2347639/A-comprehensive-guide-and-template-for-monotonic-stack-based-problems
-
+https://leetcode.com/discuss/study-guide/2703748/Monotonic-stack-study-summary [For Topic Wise]
 
 
 ===================== 1.Next Greater =================
