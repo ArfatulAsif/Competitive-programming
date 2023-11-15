@@ -1,152 +1,86 @@
-https://codeforces.com/gym/102625/problem/J
-
-//Intermediary
-//Young kid on the block
-//AIAsif try's Continuing the journey
-#include<bits/stdc++.h>
+// Intermediary
+// Young kid on the block
+// AIAsif try's Continuing the journey
+#include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
 using namespace __gnu_pbds;
 #define endl "\n"
 #define int long long int
-#define ordered_set tree< int, null_type, less<int>, rb_tree_tag,tree_order_statistics_node_update>
+#define ordered_set tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update>
 
-class XorBasis
+
+Basis: A set B of vectors in a vector space V is called a basis (pl.: bases) if every element of V may be written in a unique way as a finite linear combination of elements of B. The coefficients of this linear combination are referred to as components or coordinates of the vector with respect to B. The elements of a basis are called basis vectors.
+
+class Basis
 {
+        vector<int> a;
+
 public:
-        vector<int>basis;
-        int N = 0;
-        int temp = 0;
-
-        void add(int x)
+        void insert(int x)
         {
-                N++;
-                temp |= x;
-
-                for(auto &it : basis)
-                {
-                        x = min(x,x^it);
-                }
-                if(x==0)
-                {
+                for (auto &i : a)
+                
+                        x = min(x, x ^ i); //for row echelon form get the smallest bit which is not equals to 0 means this bit is controlled by this
+                if (!x)
                         return;
-                }
-                for(auto &it : basis)
-                {
-                        if((it^x)<it)
-                        {
-                                it ^= x;
-                        }
-                }
-                basis.push_back(x);
-                sort(basis.begin() , basis.end());
+                for (auto &i : a)
+                        if ((i ^ x) < i)
+                                i ^= x;
+                a.push_back(x);
+                sort(a.begin(), a.end());
         }
-
-        int size()
+        bool can(int x)
         {
-                return basis.size();
+                for (auto &i : a)
+                        x = min(x, x ^ i);
+                return !x;
         }
-
-        void clear()
+        int maxxor(int x = 0)
         {
-                basis.clear();
-                N = 0;
-                temp = 0;
-        }
-
-        bool possible(int x)
-        {
-                for(auto &it : basis)
-                {
-                        x = min(x, x^it);
-                }
-                return x==0;
-        }
-
-        int maxXor(int x=0)
-        {
-                for(auto &it : basis)
-                {
-                        x = max(x, x^it);
-                }
+                for (auto &i : a)
+                        x = max(x, x ^ i);
                 return x;
         }
-
-        int minXor(int x = 0)
+        int minxor(int x = 0) // always returning zero . If you are not considering empty set then take care of it...
         {
-                for(auto &it : basis)
-                {
-                        x = min(x, x^it);
-                }
+                for (auto &i : a)
+                        x = min(x, x ^ i);
                 return x;
         }
-
-        int cntXor(int x)
-        {
-                if(possible(x)==false)
-                {
-                        return 0LL;
-                }
-                return (1LL<<(N-size()));
-        }
-
-        int sumOfAll()
-        {
-                int ans = temp*(1LL<<(N-1));
-                return ans;
-        }
-
-        int kth(int k)
-        {
-                int sz = size();
-
-                if(k> (1LL<<sz))
-                {
+        int kth(int k) //1st is 0 . which means empty set is also coounted .. if you don't want to count empty set then take care of the condition whether zero can be made using existing 
+        { // 1st is 0
+                int sz = (int)a.size();
+                if (k > (1LL << sz))
                         return -1;
-                }
                 k--;
                 int ans = 0;
-                for(int i=0;i<sz;i++)
-                {
-                        if(k>>i & 1)
-                        {
-                                ans ^= basis[i];
-                        }
-
-                }
+                for (int i = 0; i < sz; i++)
+                        if (k >> i & 1)
+                                ans ^= a[i];
                 return ans;
         }
 
-
-};      
+} t;
 
 int32_t main()
 {
         ios::sync_with_stdio(0);
         cin.tie(0);
 
-        XorBasis xb;
-
-        int q;
-        cin>>q;
-
-        while(q--)
+        int n;
+        cin>>n;
+        for(int i=0;i<n;i++)
         {
-                int a , n;
-                cin>>a>>n;
-
-                if(a==1)
-                {
-                        xb.add(n);
-                }
-                else 
-                {
-                        cout<<xb.kth(n)<<endl;
-                }
+                int a;
+                cin>>a;
+                t.insert(a);
         }
 
+
+        cout<<t.maxxor()<<endl;
+
+
         return 0;
-
-
 }
