@@ -8,6 +8,7 @@
 
 
 // Remember it does not works for graph with negative cycle.
+// Time complexity O(V^2log V + VE)
 
 
 const int N = 1e5+10;
