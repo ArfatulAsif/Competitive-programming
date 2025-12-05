@@ -249,3 +249,115 @@ int32_t main()
 
 
 
+
+
+
+
+
+
+
+
+========================= 5. Minimum element in a window, using deque ==================
+
+
+
+
+
+// Minimum element in a window, using deque
+
+
+
+// https://cses.fi/problemset/task/3221/
+
+
+const int N = 1e7+5;
+
+int ara[N];
+
+
+
+
+int32_t main()
+{
+        ios::sync_with_stdio(0);
+        cin.tie(0);
+
+        int n,k;
+        cin>>n>>k;
+
+        int x,a,b,c;
+
+        cin>>x>>a>>b>>c;
+
+        ara[0] = x;
+
+        for(int i=1;i<n;i++)
+        {
+                x = (a*1LL*x+b)%c;
+
+                ara[i] = x;
+        }
+
+        deque<int>d;
+
+        int i=0,j=0;
+
+        int Xor=0;
+
+        while(j<n)
+        {
+                if(j-i+1 < k)
+                {
+                        while(!d.empty() && ara[d.back()] >= ara[j])
+                        {
+                                d.pop_back();
+                        }
+
+                        d.push_back(j);
+
+                        j++;
+                }
+
+                else 
+                {
+                        while(!d.empty() && ara[d.back()] >= ara[j])
+                        {
+                                d.pop_back();
+                        }
+
+                        d.push_back(j);
+
+                        Xor ^= ara[d.front()];   // Minimum element in the k-length window
+
+
+                        while( !d.empty() && i >= d.front())
+                        {
+                                d.pop_front();
+                        }
+
+                        i++,j++;
+                }
+        }
+
+
+        cout<<Xor<<endl;
+
+
+
+        
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
